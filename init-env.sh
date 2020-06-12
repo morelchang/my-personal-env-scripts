@@ -8,7 +8,8 @@ curl -s https://raw.githubusercontent.com/git/git/master/contrib/completion/git-
 echo "source ~/.git-completion.bash" >> ~/.bash_profile
 
 curl -s -o - https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
-echo "source ~/.git-prompt.sh" >>  ~/.bash_profile
+echo "source ~/.git-prompt.sh" >> ~/.bash_profile
+echo "PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '" >> ~/.bash_profile
 
 curl -s https://raw.githubusercontent.com/morelchang/my-personal-env-scripts/master/.vimrc -o ~/.vimrc
 mkdir -p ~/.vim/colors/ && curl -s -o - https://raw.githubusercontent.com/romainl/Apprentice/master/colors/apprentice.vim > ~/.vim/colors/apprentice.vim
