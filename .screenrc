@@ -1,2 +1,7 @@
-hardstatus alwayslastline "%w"                                                                                                                                                    
-caption always "%{-b ..}%-w%{+b ..}[[%n%f*%t]]%{-}%+w"
+caption always "%{.KW} %-w%{.mW}[%n] %t%{.KW}%+w"
+hardstatus alwayslastline "%{R}[ %{w}%1` %{R}]%=%{M}%e %{G}%H %{Y} %c %{R} %d/%m/%Y %{K} Load: %l %{w}"
+
+#term screen-256color
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
