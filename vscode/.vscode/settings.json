@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "log-ingester/venv/bin/python3",
+    "python.venvPath": "log-ingester/venv/",
+    "python.envFile": "${workspaceFolder}/.env",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "./log-ingester/app"
+    },
+    "python.testing.cwd": "${workspaceFolder}/log-ingester/app/",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}
